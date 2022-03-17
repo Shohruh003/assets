@@ -1,0 +1,56 @@
+.nav__list {
+  @include flexStayle(center, space-between);
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.nav__item {
+  margin-right: 50px;
+  padding: 5px;
+  &:hover {
+    box-sizing: border-box;
+    box-shadow: 0px 2px #191919;
+    &:hover .nav__link {
+      color: #000000
+    }
+  }
+}
+.nav__link {
+  @include linkStyle(none, 15px,rgba(0, 0, 0,0.6));
+}
+.sportList {
+  @include flexStayle(fex-end, space-between);
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.sportList__item {
+  width: 242px;
+}
+.sportList__heading {
+  @include textStyle(18px, 24px, #000000);
+  margin: 0;
+  margin-bottom: 30px;
+}
+.sportList__text {
+  @include textStyle(14px, 18px, #000000);
+  margin: 0;
+  margin-bottom: 16px;
+}
+.sportList__link {
+  @include flexStayle(center,start);
+  @include linkStyle(none,18px, rgb(252, 81, 29));
+  font-variant: small-caps;
+  &::before{
+    width: 30px;
+    height: 2px;
+    margin-right: 10px;
+    content: "";
+    background-color: rgb(252, 81, 29);
+  }
+}
+.sportList__link:active{
+  &::before {
+    width: 50px;
+  }
+}

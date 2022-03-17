@@ -1,0 +1,45 @@
+.sport {
+  margin-top: 50px;
+}
+.sport__flexible {
+  @include flexStayle(center, space-between);
+}
+.sport__content {
+  padding-top: 200px;
+  padding-bottom: 250px;
+  width: 363px;
+}
+.sport__heading {
+  margin: 0;
+  margin-bottom: 40px;
+  @include textStyle(40px, 56px, #000000);
+}
+.sport__text {
+  display: flex;
+  margin: 0;
+  margin-bottom: 40px;
+  @include textStyle(14px, 18px, rgba(0, 0, 0,0.6));
+}
+.sport__text::before {
+  width: 8px;
+  height: 70px;
+  margin-right: 20px;
+  content: "";
+  background-color: rgba(0, 0, 0,0.6);
+}
+.sport__button {
+  padding-top: 7px;
+  padding-right: 16px;
+  padding-bottom: 7px;
+  padding-left: 16px;
+  border: none;
+  background-color: rgb(252, 81, 29);
+  color: #ffffff;
+  font-variant: small-caps;
+}
+.sport__button:hover {
+  cursor: pointer;
+}
+.sport__button:active {
+  background-color: rgb(235, 73, 23);
+}
