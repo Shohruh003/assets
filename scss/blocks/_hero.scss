@@ -1,19 +1,22 @@
 .hero {
   background-image: url("../../img/watches.jpg");
+  background-size: 587px 565px;
   background-repeat: no-repeat;
-  background-position: center right -295px;
+  background-position: calc(50% + 500px);
+  padding-top: 110px;
+  padding-bottom: 180px;
 }
 .hero__content {
-  padding-top: 200px;
-  padding-bottom: 339px;
   width: 375px;
 }
 .hero__heading {
+  font-weight: 700;
   margin: 0;
   margin-bottom: 40px;
   @include textStyle(40px, 56px, #000000);
 }
 .hero__text {
+  font-weight: 400px;
   display: flex;
   margin: 0;
   margin-bottom: 40px;
@@ -27,18 +30,38 @@
   background-color: rgba(0, 0, 0,0.6);
 }
 .hero__button {
-  padding-top: 7px;
-  padding-right: 16px;
-  padding-bottom: 7px;
-  padding-left: 16px;
+  padding-top: 12px;
+  padding-right: 39px;
+  padding-bottom: 12px;
+  padding-left: 39px;
   border: none;
-  background-color: rgb(252, 81, 29);
-  color: #ffffff;
+  background-color: rgb(234, 98, 92);
+  color: #ffffff; 
   font-variant: small-caps;
 }
 .hero__button:hover {
   cursor: pointer;
+  background-color: rgb(247, 73, 20);
 }
 .hero__button:active {
   background-color: rgb(235, 73, 23);
+}
+
+.hero__hr {
+  margin: 0;
+}
+
+@media only screen and (max-width: 520px) {
+  .hero {
+    background-image: url("../../img/watches.jpg");
+    background-size: 500px auto;
+    background-position-x: calc(top + 200px);
+    padding-top: 30px;
+    padding-bottom: 180px;
+  }
+
+  .hero__content {
+    width: 375px;
+    padding-top: 400px;
+  }
 }
